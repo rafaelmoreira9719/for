@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+</head>
+<body>
+    
+<input id="ipt1" placeholder="digite o numero"> <br><br>
+<input id="ipt2" placeholder="digite uma frase"> <br><br>
+
+<button onclick="mostrar()">Papagaio</button> <br>
+
+<div id="div_msg"></div>
+
+</body>
+</html>
+<script>
+
+
+function mostrar() {
+    var numero = Number(ipt1.value);
+    var frase = ipt2.value;
+
+
+    for (var index = 1; index <= numero; index++) {
+        div_msg.innerHTML += `${frase} <br>`;
+        
+    }
+
+}
+
+</script>
